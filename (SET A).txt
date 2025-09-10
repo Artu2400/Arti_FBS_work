@@ -1,0 +1,43 @@
+(SET A)
+
+Q1:-
+
+
+Q2:- select name,salary
+from employee order by salary Desc 
+limit 5;
+
+Q3:-
+
+Q4:- select department,count(*) as employeeCount
+from employees
+order by department;
+
+Q5:- select did.avg(salary) asSalary
+from employees
+group by did
+having avg(salary)>50000
+
+Q6:- select * from productS
+where productName like '%Laptop%';
+
+Q7:- select left(studentName ,3)as FirstthreeChars
+from students;
+
+Q8:- select * from student where studentName like 'A%';
+
+Q11:- (a) The total number of employees
+
+Q12:- (b) 8
+
+Q13:- (c) HAVING
+
+Q14:- (b)Returns all rows from the left table and matching rows from the right table
+
+Q16:- (b) HELLO WORLD
+
+Q17:- select b.author_id,sum(s.quantity)as total_books_sold
+from books b
+join sales s on b.book_id=s.book_id
+group by b.author_id
+HAVING sum(s.quantity)>100;
